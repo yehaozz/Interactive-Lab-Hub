@@ -77,8 +77,8 @@ Goals: Instead of the parent getting a loud noise on the baby monitor, a light s
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
-\*\***Include a picture of your storyboard here**\*\*
-<img src="./storyboard.png" align="center" height="100">
+\*\***Include a picture of your storyboard here**\*\*\
+<img src="./storyboard.png" align="center" height="500">
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 

@@ -71,19 +71,24 @@ The interactive device can be anything *except* a computer, a tablet computer or
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
 Setting: In two rooms.
+
 Players: Babies and parents who are working from home.
+
 Activity: The baby is crying in a room and the parent is on a zoom meeting in a different room.
+
 Goals: Instead of the parent getting a loud noise on the baby monitor, a light source flashes alerting the parents of the child crying. This can help parents who are working from home to monitor their babies in a non-intrusive way using light.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
-\*\***Include a picture of your storyboard here**\*\*\
-<img src="./storyboard.png" align="center" height="500">
+\*\***Include a picture of your storyboard here**\*\*
+
+<img src="./storyboard.png" height="500">
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
 
+Roommate: This device is very useful, especially in our current time where working from home is being a new normal.
 
 ## Part B. Act out the Interaction
 
@@ -91,8 +96,14 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+Compared to our expectation depicted in the storyboard, the light intensity is not strong enough on the mobile phone.
+Also, it is hard to act out and record scenes happening in different rooms at the same time, which is easy to deliver on paper.
+
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
 
+We can switch to other light sources in order to get the flashing effect.
+
+The light source should be placed somewhere more visible, and ideally more portable.
 
 ## Part C. Prototype the device
 
@@ -106,13 +117,18 @@ If you run into technical issues with this tool, you can also use a light switch
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
 
+Tinkerbelle works great with colour changing and the interaction is seamless. We hope it can include features such as blinking and gradual variation of intensity too.
+
+On some of our teammates' laptops, although they can run the tinker.py code without error messages, they cannot visit the webpage.
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+https://user-images.githubusercontent.com/52665472/132105549-c81d670c-7ff0-4986-9512-915c7da94161.mp4
+
+Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
 
@@ -125,8 +141,10 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
-\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+<img src="./device.png" height="300">
 
+\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+Make the light change more visible for the parents. So place the device in a more visible location like a light source on the wall or a lamp on the desk.
 
 ## Part F. Record
 
@@ -135,6 +153,7 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
+I collaborated with Neha Manjunath(nm468), Tianyun Zou(tz392), Zhengxing Xue(zx252) on this lab. We worked through all the parts together, and Tianyun in addition sketched the nice storyboard.
 
 
 # Staging Interaction, Part 2 

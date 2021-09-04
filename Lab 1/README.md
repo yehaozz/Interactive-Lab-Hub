@@ -76,13 +76,13 @@ Players: Babies and parents who are working from home.
 
 Activity: The baby is crying in a room and the parent is on a zoom meeting in a different room.
 
-Goals: Instead of the parent getting a loud noise on the baby monitor, a light source flashes alerting the parents of the child crying. This can help parents who are working from home to monitor their babies in a non-intrusive way using light.
+Goals: Instead of the parent getting a loud noise on the baby monitor, a light source flashes alerting the parents of the child crying. This can help parents who are working from home to monitor their babies in a non-intrusive way using light. The goal of the baby is to let parents know that he/she is crying, and the goal of the parents is to soothe the baby.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
 \*\***Include a picture of your storyboard here**\*\*
 
-<img src="./storyboard.png" height="500">
+<img src="./storyboard.png" height="300">
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
@@ -131,7 +131,9 @@ https://user-images.githubusercontent.com/52665472/132105549-c81d670c-7ff0-4986-
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
+The updated goal is to help the parents monitor the status of the baby. If the baby is asleep, the light turns green. If the baby is awake and not crying, the light turns yellow. If the baby starts to cry, the light then turns red.
 
+<img src="./storyboard_update.png" height="500">
 
 ## Part E. Costume the device
 
@@ -141,7 +143,7 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
-<img src="./device.png" height="300">
+<img src="./device.png" height="200">
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 Make the light change more visible for the parents. So place the device in a more visible location like a light source on the wall or a lamp on the desk.

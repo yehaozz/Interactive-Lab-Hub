@@ -70,9 +70,15 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
+Setting: In two rooms.
+Players: Babies and parents who are working from home.
+Activity: The baby is crying in a room and the parent is on a zoom meeting in a different room.
+Goals: Instead of the parent getting a loud noise on the baby monitor, a light source flashes alerting the parents of the child crying. This can help parents who are working from home to monitor their babies in a non-intrusive way using light.
+
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
 \*\***Include a picture of your storyboard here**\*\*
+![Picture of storyboard](./storyboard.png)
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 

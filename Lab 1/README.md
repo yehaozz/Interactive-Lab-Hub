@@ -152,11 +152,12 @@ Make the light change more visible for the parents. So place the device in a mor
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+https://user-images.githubusercontent.com/52665472/132268608-9cb74d0e-8bca-4a6e-a6e0-82fe715e4557.MP4
+
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
-I collaborated with Neha Manjunath(nm468), Tianyun Zou(tz392), Zhengxing Xue(zx252) on this lab. We worked through all the parts together, and Tianyun in addition sketched the nice storyboard.
-
+I collaborated with Neha Manjunath(nm468), Tianyun Zou(tz392), Zhengxing Xue(zx252) on this lab. We worked through all the parts together.
 
 # Staging Interaction, Part 2 
 

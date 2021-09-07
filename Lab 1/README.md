@@ -131,9 +131,8 @@ https://user-images.githubusercontent.com/52665472/132105549-c81d670c-7ff0-4986-
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
-The updated goal is to help the parents monitor the status of the baby. If the baby is asleep, the light turns green. If the baby is awake and not crying, the light turns yellow. If the baby starts to cry, the light then turns red.
 
-<img src="./storyboard_update.png" height="500">
+https://user-images.githubusercontent.com/52665472/132270616-9949663b-ff1e-42b8-b05a-838159450fdd.MP4
 
 ## Part E. Costume the device
 

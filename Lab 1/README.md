@@ -200,7 +200,7 @@ All the adjustments to our chosen interaction were based on the peer reviews, an
 
 Updated storyboard
 
-<img src="./storyboard_update_update.png" height="200">
+<img src="./storyboard_update_update.png" height="250">
 
 Updated device
 

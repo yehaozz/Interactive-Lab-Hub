@@ -44,7 +44,7 @@ A) [Plan](#part-a-plan)
 
 B) [Act out the interaction](#part-b-act-out-the-interaction) 
 
-C) [Prototype the device](#part-c-prototype-the-device)
+C) [Prototype the ](#part-c-prototype-the-device)
 
 D) [Wizard the device](#part-d-wizard-the-device) 
 
@@ -142,7 +142,7 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
-<img src="./device.png" height="200">
+<img src="./device.png" height="150">
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 Make the light change more visible for the parents. So place the device in a more visible location like a light source on the wall or a lamp on the desk.
@@ -169,6 +169,23 @@ You will be assigned three partners from another group. Go to their github pages
 
 \*\***Summarize feedback from your partners here.**\*\*
 
+**1. Necessity of the system**
+One feedback is that it may be possible to hear directly the baby crying, so it could be unnecessary to use such a device as a notification.
+
+We previously thought that the babies and the parents were in different rooms, and that the parents could be too engaged in the work, for example when they wore headphones when attending online meetings. To address this feedback, we updated our storyboard by adding a headset for the main character.
+
+**2. Sending notifications in different ways**
+One feedback suggested that this device would be more useful if the signalling device is not stationary. The parent could be moving around the house ex: kitchen, washroom. So we decided to include another non intrusive signalling device like a smartwatch that vibrates when the baby is crying.
+
+**3. Expand the features**
+The previous system could only tell whether the baby was crying or not. One of our peers suggested using more colors to indicate whether the baby was asleep, awake, or crying. Also, the system should allow users to customize on which device/s they would prefer receiving the notifications, like the lamp or smartwatch or both.
+
+We address these feedbacks in our storyboard and the video. Specifically, the lamp is just a normal light source working on its own when the baby is sleeping. When the baby wakes up, the lamp starts to flash. The parent can turn it off using a mobile app, or using the connected smart watch to turn off the notification. If the baby starts to cry, the lamp should turn red. The parent can go comforting the baby and turn off the alert using the app or the smart watch.
+
+**4. Change the color of the lamp with Tinkerbelle**
+One common question that we got from our peers was how we changed the color of the lamp. We placed a mobile phone with Tinkerbelle set up on it in the lamp. And then when we changed the color on the laptop, the light of the lamp changed accordingly.
+
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
@@ -177,3 +194,20 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+For this part of the lab, I collaborated with the same group of students, and we worked together throughout the process.
+
+All the adjustments to our chosen interaction were based on the peer reviews, and are included in the above summarization section.
+
+Updated storyboard
+
+<img src="./storyboard_update_update.png" height="200">
+
+Updated device
+
+<img src="./device_update.png" height="150">
+
+Updated video
+
+https://user-images.githubusercontent.com/52665472/133176126-1ab64ed9-1229-43f4-b94a-cb7a4b40af06.MP4
+
+We forgot to reshoot the beginning scene where the parent was working on his computer, and we reused the video clip from last week. As a result, the parent was not wearing a headset in the first scene but did so in the following ones.

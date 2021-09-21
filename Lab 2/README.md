@@ -192,9 +192,15 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 \*\*\***Take a video of your PiClock.**\*\*\*
 
+https://user-images.githubusercontent.com/52665472/134111414-b52f825c-5f3c-4834-bdc3-ccdda0a74f2f.mp4
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+Further interaction: 
 
+1. Change the shape when pushing the button
+
+2. Switch between the barebone clock and the binary clock when pushing the button
 
 # Prep for Part 2
 

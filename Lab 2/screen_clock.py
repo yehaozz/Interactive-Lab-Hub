@@ -60,12 +60,64 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
+def convert_number(num):
+    """
+    Convert the given decimal number to two strings representing two 4-digit binary numbers.
+    """
+    l = len(str(num)) # number of digits of the decimal number
+    if l == 1:
+        num1 = '0000'
+        num2 = f'{num:04b}' # convert to binary str
+    else:
+        num1 = f'{int(str(num)[0]):04b}'
+        num2 = f'{int(str(num)[1]):04b}'
+    
+    num1 = num1.replace('0', '\u25cb').replace('1', '\u25c9')
+    num2 = num2.replace('0', '\u25cb').replace('1', '\u25c9')
+    return num1, num2
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    y = top
+    t = time.strftime("%m/%d/%Y %H:%M:%S")
+    draw.text((x, y), t, font=font, fill="#000000")
+    
+    # Define the font color for AM and PM times
+    fill_am = '#FFA500'
+    fill_pm = '#0000FF'
+    font_fill = fill_am
+    
+    # Get the current hour, minute, and second
+    hour, minute, second = map(int, time.strftime("%H %M %S").split())
+    
+    if hour > 12:
+        hour -= 12
+        font_fill = fill_pm
+    
+    h1, h2 = convert_number(hour)
+    m1, m2 = convert_number(minute)
+    s1, s2 = convert_number(second)
 
+    y += font.getsize(t)[1]
+    text = '   '.join(['8', h1[0], h2[0], m1[0], m2[0], s1[0], s2[0]])
+    draw.text((x, y), text, font=font, fill=font_fill)
+    
+    y += font.getsize(t)[1]
+    text = '   '.join(['4', h1[1], h2[1], m1[1], m2[1], s1[1], s2[1]])
+    draw.text((x, y), text, font=font, fill=font_fill)
+    
+    y += font.getsize(t)[1]
+    text = '   '.join(['2', h1[2], h2[2], m1[2], m2[2], s1[2], s2[2]])
+    draw.text((x, y), text, font=font, fill=font_fill)
+    
+    y += font.getsize(t)[1]
+    text = '   '.join(['1', h1[3], h2[3], m1[3], m2[3], s1[3], s2[3]])
+    draw.text((x, y), text, font=font, fill=font_fill)
+    
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
+

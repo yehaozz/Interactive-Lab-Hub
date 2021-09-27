@@ -197,9 +197,20 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 \*\*\***Take a video of your PiClock.**\*\*\*
 
+https://user-images.githubusercontent.com/52665472/134111414-b52f825c-5f3c-4834-bdc3-ccdda0a74f2f.mp4
+
+The numbers for each row are derived from the power of 2. The first row represents 2<sup>0</sup> (1), the second represents 2<sup>1</sup> (2), the third is 2<sup>2</sup> (4), and the top row represents 2<sup>3</sup> (8).
+
+<img src="./read_binary_clock.png" height="300">
+
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+Further interaction: 
 
+1. Change the shape when pushing the button
+
+2. Switch between the barebone clock and the binary clock when pushing the button
 
 # Prep for Part 2
 

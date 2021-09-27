@@ -229,4 +229,11 @@ As always, make sure you document contributions and ideas from others explicitly
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
+\*\*\***Updated video**\*\*\*
+
+I got the idea of this binary clock from this website: https://www.wikihow.com/Read-a-Binary-Clock .
+
+Apart from the further interactions mentioned in part 1, I updated the clock such that the shape color was orange when the time was 'AM' and was blue when the time was 'PM' based on the feedback that I got.
+
+https://user-images.githubusercontent.com/52665472/134987572-3f4881b5-436a-45b0-88bc-eb4ece7e53c3.mp4
 

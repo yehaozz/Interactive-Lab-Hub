@@ -90,6 +90,9 @@ def convert_number(num, shape):
     num2 = num2.replace('0', shape_utf[0]).replace('1', shape_utf[1])
     return num1, num2
 
+shape_options = itertools.cycle(['rhombus', 'square', 'circle'])
+shape = 'circle' # default shape
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -97,9 +100,6 @@ while True:
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
     y = top
     t = time.strftime("%m/%d/%Y %I:%M:%S %p")
-    
-    shape_options = itertools.cycle(['rhombus', 'square', 'circle'])
-    shape = 'circle' # default shape
     
     if buttonB.value and not buttonA.value: # just buttonA pressed, display the time
         draw.text((x, y), t, font=font, fill="#FFFFFF")

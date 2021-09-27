@@ -112,32 +112,21 @@ while True:
     font_fill = fill_am
     
     # Get the current hour, minute, and second
-    hour, minute, second = map(int, time.strftime("%H %M %S").split())
+    hour, minute, second = map(int, time.strftime("%I %M %S").split())
+    p = time.strftime("%p") # AM or PM
     
-    if hour > 12:
-        hour -= 12
+    if p == 'PM':
         font_fill = fill_pm
     
     h1, h2 = convert_number(hour, shape)
     m1, m2 = convert_number(minute, shape)
     s1, s2 = convert_number(second, shape)
-
-    y += font.getsize(t)[1]
-    text = '   '.join(['8', h1[0], h2[0], m1[0], m2[0], s1[0], s2[0]])
-    draw.text((x, y), text, font=font, fill=font_fill)
     
-    y += font.getsize(t)[1]
-    text = '   '.join(['4', h1[1], h2[1], m1[1], m2[1], s1[1], s2[1]])
-    draw.text((x, y), text, font=font, fill=font_fill)
-    
-    y += font.getsize(t)[1]
-    text = '   '.join(['2', h1[2], h2[2], m1[2], m2[2], s1[2], s2[2]])
-    draw.text((x, y), text, font=font, fill=font_fill)
-    
-    y += font.getsize(t)[1]
-    text = '   '.join(['1', h1[3], h2[3], m1[3], m2[3], s1[3], s2[3]])
-    draw.text((x, y), text, font=font, fill=font_fill)
-    
+    for i in range(4):
+        y += font.getsize(t)[1]
+        text = '   '.join([str(2**(3-i)), h1[i], h2[i], m1[i], m2[i], s1[i], s2[i]])
+        draw.text((x, y), text, font=font, fill=font_fill)
+        
     # Display image.
     disp.image(image, rotation)
     time.sleep(0.01)

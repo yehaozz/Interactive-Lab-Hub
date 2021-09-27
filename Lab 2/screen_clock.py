@@ -4,6 +4,7 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+import itertools
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -60,7 +61,13 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
-def convert_number(num):
+# Set up the button
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
+def convert_number(num, shape):
     """
     Convert the given decimal number to two strings representing two 4-digit binary numbers.
     """
@@ -72,8 +79,15 @@ def convert_number(num):
         num1 = f'{int(str(num)[0]):04b}'
         num2 = f'{int(str(num)[1]):04b}'
     
-    num1 = num1.replace('0', '\u25cb').replace('1', '\u25c9')
-    num2 = num2.replace('0', '\u25cb').replace('1', '\u25c9')
+    if shape == 'circle':
+        shape_utf = ['\u25cb', '\u25c9']
+    elif shape == 'rhombus':
+        shape_utf = ['\u25c7', '\u25c8']
+    elif shape == 'square':
+        shape_utf = ['\u25a1', '\u25a3']
+        
+    num1 = num1.replace('0', shape_utf[0]).replace('1', shape_utf[1])
+    num2 = num2.replace('0', shape_utf[0]).replace('1', shape_utf[1])
     return num1, num2
 
 while True:
@@ -82,8 +96,15 @@ while True:
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
     y = top
-    t = time.strftime("%m/%d/%Y %H:%M:%S")
-    draw.text((x, y), t, font=font, fill="#000000")
+    t = time.strftime("%m/%d/%Y %I:%M:%S %p")
+    
+    shape_options = itertools.cycle(['rhombus', 'square', 'circle'])
+    shape = 'circle' # default shape
+    
+    if buttonB.value and not buttonA.value: # just buttonA pressed, display the time
+        draw.text((x, y), t, font=font, fill="#FFFFFF")
+    elif buttonA.value and not buttonB.value: # just buttonB pressed, change the shape
+        shape = next(shape_options)
     
     # Define the font color for AM and PM times
     fill_am = '#FFA500'
@@ -97,9 +118,9 @@ while True:
         hour -= 12
         font_fill = fill_pm
     
-    h1, h2 = convert_number(hour)
-    m1, m2 = convert_number(minute)
-    s1, s2 = convert_number(second)
+    h1, h2 = convert_number(hour, shape)
+    m1, m2 = convert_number(minute, shape)
+    s1, s2 = convert_number(second, shape)
 
     y += font.getsize(t)[1]
     text = '   '.join(['8', h1[0], h2[0], m1[0], m2[0], s1[0], s2[0]])
@@ -119,4 +140,4 @@ while True:
     
     # Display image.
     disp.image(image, rotation)
-    time.sleep(1)
+    time.sleep(0.01)

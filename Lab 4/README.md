@@ -197,8 +197,36 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+1. Gesture - an alarm that needs users to make gestures followed by random instructions to turn off, so that it makes sure users wake up
+
+   * Questions:
+       * The gesture sensor only detects gestures near to it, so that the user has to wave hands right in front of the alarm.
+       * The speaker might not be loud enough to wake users up.
+
+   * Solutions:
+       * We can make both the gesture sensor and the speaker exposed to the outside of the box, so that it’s easier to detect users’ gestures and the sounds can be louder.
+
+2. Capacitive Sensing - piano or make different sounds when touching different pads
+
+   * The speaking command from the previous lab has some delay, which can make the piano not as interactive. How will the delay affect the user interaction needs a prototype to answer. 
+   * The piano keys are connected to the capacitive sensors, so the user can simply touch the keys instead of pressing them. How the connection would work and will user be comfortable with the new way needs prototyping.
+   * The width and the length of each piano keys needs prototype to optimize .
+
+3. Proximity and distance sensor - covid, social distancing, reminding if too close to other people
+   * The speaker available is from the webcam. That is too huge for a pocket device. 
+   * Also the field of sensing for the distance sensor is 25 degrees. If a person is not in this field of view they might not be detected. So prototyping is necessary to understand the limitations of the sensor and how the user will interact with it.
+   * Since the device is used in social settings where multiple people are gathered, how other people interact with the device is also necessary to understand the modality of the output to make it cautious as well as non intrusive.
+
+4. Proximity sensor - greeting, automatically greeting users when they are back home or customers entering a store
+   * The OLED screen may not be necessary in that the user will be too far from the device to actually read the words on the screen. Physical prototypes are required to examine this question.
+   * The proximity sensor should be placed close enough to the door to detect the motion. It might be better using the distance sensor instead.
+
+5. Light sensor- seeing the environment light and reducing the light brightness
+   * The screen is not large enough and its light is not bright enough to use as a lamp for the whole room. In this case, we can use the lamp just for a small desk lamp.
+
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
+We choose the first design, the gesture alarm, to prototype.
 
 ### Part D
 ### Physical considerations for displaying information and housing parts

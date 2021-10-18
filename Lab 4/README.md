@@ -268,16 +268,49 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+1. Use a button to snooze for 10 more minutes after the alarm rings. When the alarm rings, the user can press the side button twice to snooze the alarm and delay the alarm time 10 minutes later.
+
+<img src="./images/display1.png" height="300">
+
+2. Using the OLED display to show both the time and the feedback to the user for the gesture. The entire unit is housed in the cardboard box which includes the pi place at the bottom, gesture sensor right below the display and the speaker from the webcam at the top.
+
+<img src="./images/display2.jpg" height="300">
+
+3. Use two OLED screens. One of the OLED screens is placed next to the user to display the time, while the other is placed in front of the user to show the gesture instructions. The gesture sensor is in front of the user.
+
+<img src="./images/display3.png" height="300">
+
+4. Use two OLED screens. Both of the OLED screens are placed in front of the user, displaying the time and the gesture instructions separately. The gesture sensor is in front of the user.
+
+<img src="./images/display4.png" height="300">
+
+5. Use two OLED screens. They are on two different sides of the device, and displaying the time and the gesture instructions separately. The gesture sensor is next to the user.
+
+<img src="./images/display5.png" height="300">
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+1. Use a button to snooze for 10 more minutes after the alarm rings. The button might be small, and if we embed it into the alarm, it might not be easy for users to press. The solution could be to place the button exposure outside the alarm box so that it will be easier to press.
+2. The size of the display might make it hard for the user to read what's on the screen, be it the time or the gesture directions and feedback. Also if the clock is not placed close to the user, the proximity sensor might not be able to sense the gestures the user is showing. The solution for this is to place the entire unit close to the user or to display the time and gesture feedback in different screens and place the gesture sensor closer to the user.
+3. Using different modules that are placed far away from each other for the gesture and clock is hard for making the connections since we’re using one Pi to control all the modules.
+4. The layout of two screens might constrain the height of the device. Same as sketch 3, the gesture sensor is far from the user which could make it hard for the sensor to pick up the user’s input.
+5. To see both the screens in side by side settings, the user needs to be at certain angles to the device. How we want to set up the two screens and what information to display on the displays needs prototyping. 
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+We choose to combine the 4th and 5th design, using two OLED screens and the gesture sensor placed on top of the device. Both of the OLED screens are placed in next to the user, displaying the time and the gesture instructions separately on the same side of the device.
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+The reason we choose to combine design 4&5 is that showing both the time and the gesture instructions on the side lets the user see both information, which makes more sense in practice. Considering the working distance of the gesture sensor, placing it near the user makes picking up the user's inputs possible. Besides, because the speaker is closer to the user, it should be easier to wake up the user with the same sound volume.
 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+<img src="./images/prototype1.jpg" height="400">
+
+<img src="./images/prototype2.jpg" height="400">
 
 LAB PART 2
 

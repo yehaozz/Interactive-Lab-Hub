@@ -177,7 +177,23 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 1. Gesture - an alarm that needs users to make gestures followed by random instructions to turn off, so that it makes sure users wake up
 
-2. 
+<img src="./images/sketch1.jpg" height="300">
+
+2. Capacitive Sensing - piano or make different sounds when touching different pads
+
+<img src="./images/sketch2.jpg" height="500">
+
+3. Proximity and distance sensor - covid, social distancing, reminding if too close to other people
+
+<img src="./images/sketch3.jpg" height="500">
+
+4. Proximity sensor - greeting, automatically greeting users when they are back home or customers entering a store
+
+<img src="./images/sketch4.png" height="500">
+
+5. Light sensor- seeing the environment light and reducing the light brightness
+
+<img src="./images/sketch5.jpg" height="300">
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 

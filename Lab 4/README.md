@@ -103,14 +103,14 @@ We here want you to get to know this awesome sensor [Adafruit APDS-9960](https:/
 
 <img src="https://cdn-shop.adafruit.com/970x728/3595-03.jpg" width=200>
 
-Connect it to your pi with Qwiic connector and try running the 3 example scripts individually to see what the sensor is capable of doing!
+Connect it to your pi with Qwiic connector and try running the three example scripts individually to see what the sensor is capable of doing!
 
 ```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python light_test.py
-...
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python proximity_test.py
 ...
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python gesture_test.py
+...
+(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python color_test.py
 ...
 ```
 
@@ -175,10 +175,58 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+1. Gesture - an alarm that needs users to make gestures followed by random instructions to turn off, so that it makes sure users wake up
+
+<img src="./images/sketch1.jpg" height="300">
+
+2. Capacitive Sensing - piano or make different sounds when touching different pads
+
+<img src="./images/sketch2.jpg" height="500">
+
+3. Proximity and distance sensor - covid, social distancing, reminding if too close to other people
+
+<img src="./images/sketch3.jpg" height="500">
+
+4. Proximity sensor - greeting, automatically greeting users when they are back home or customers entering a store
+
+<img src="./images/sketch4.png" height="500">
+
+5. Light sensor- seeing the environment light and reducing the light brightness
+
+<img src="./images/sketch5.jpg" height="300">
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+1. Gesture - an alarm that needs users to make gestures followed by random instructions to turn off, so that it makes sure users wake up
+
+   * Questions:
+       * The gesture sensor only detects gestures near to it, so that the user has to wave hands right in front of the alarm.
+       * The speaker might not be loud enough to wake users up.
+
+   * Solutions:
+       * We can make both the gesture sensor and the speaker exposed to the outside of the box, so that it’s easier to detect users’ gestures and the sounds can be louder.
+
+2. Capacitive Sensing - piano or make different sounds when touching different pads
+
+   * The speaking command from the previous lab has some delay, which can make the piano not as interactive. How will the delay affect the user interaction needs a prototype to answer. 
+   * The piano keys are connected to the capacitive sensors, so the user can simply touch the keys instead of pressing them. How the connection would work and will user be comfortable with the new way needs prototyping.
+   * The width and the length of each piano keys needs prototype to optimize .
+
+3. Proximity and distance sensor - covid, social distancing, reminding if too close to other people
+   * The speaker available is from the webcam. That is too huge for a pocket device. 
+   * Also the field of sensing for the distance sensor is 25 degrees. If a person is not in this field of view they might not be detected. So prototyping is necessary to understand the limitations of the sensor and how the user will interact with it.
+   * Since the device is used in social settings where multiple people are gathered, how other people interact with the device is also necessary to understand the modality of the output to make it cautious as well as non intrusive.
+
+4. Proximity sensor - greeting, automatically greeting users when they are back home or customers entering a store
+   * The OLED screen may not be necessary in that the user will be too far from the device to actually read the words on the screen. Physical prototypes are required to examine this question.
+   * The proximity sensor should be placed close enough to the door to detect the motion. It might be better using the distance sensor instead.
+
+5. Light sensor- seeing the environment light and reducing the light brightness
+   * The screen is not large enough and its light is not bright enough to use as a lamp for the whole room. In this case, we can use the lamp just for a small desk lamp.
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
+We choose the first design, the gesture alarm, to prototype.
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -220,16 +268,49 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+1. Use a button to snooze for 10 more minutes after the alarm rings. When the alarm rings, the user can press the side button twice to snooze the alarm and delay the alarm time 10 minutes later.
+
+<img src="./images/display1.png" height="300">
+
+2. Using the OLED display to show both the time and the feedback to the user for the gesture. The entire unit is housed in the cardboard box which includes the pi place at the bottom, gesture sensor right below the display and the speaker from the webcam at the top.
+
+<img src="./images/display2.jpg" height="300">
+
+3. Use two OLED screens. One of the OLED screens is placed next to the user to display the time, while the other is placed in front of the user to show the gesture instructions. The gesture sensor is in front of the user.
+
+<img src="./images/display3.png" height="300">
+
+4. Use two OLED screens. Both of the OLED screens are placed in front of the user, displaying the time and the gesture instructions separately. The gesture sensor is in front of the user.
+
+<img src="./images/display4.png" height="300">
+
+5. Use two OLED screens. They are on two different sides of the device, and displaying the time and the gesture instructions separately. The gesture sensor is next to the user.
+
+<img src="./images/display5.png" height="300">
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+1. Use a button to snooze for 10 more minutes after the alarm rings. The button might be small, and if we embed it into the alarm, it might not be easy for users to press. The solution could be to place the button exposure outside the alarm box so that it will be easier to press.
+2. The size of the display might make it hard for the user to read what's on the screen, be it the time or the gesture directions and feedback. Also if the clock is not placed close to the user, the proximity sensor might not be able to sense the gestures the user is showing. The solution for this is to place the entire unit close to the user or to display the time and gesture feedback in different screens and place the gesture sensor closer to the user.
+3. Using different modules that are placed far away from each other for the gesture and clock is hard for making the connections since we’re using one Pi to control all the modules.
+4. The layout of two screens might constrain the height of the device. Same as sketch 3, the gesture sensor is far from the user which could make it hard for the sensor to pick up the user’s input.
+5. To see both the screens in side by side settings, the user needs to be at certain angles to the device. How we want to set up the two screens and what information to display on the displays needs prototyping. 
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+We choose to combine the 4th and 5th design, using two OLED screens and the gesture sensor placed on top of the device. Both of the OLED screens are placed in next to the user, displaying the time and the gesture instructions separately on the same side of the device.
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+The reason we choose to combine design 4&5 is that showing both the time and the gesture instructions on the side lets the user see both information, which makes more sense in practice. Considering the working distance of the gesture sensor, placing it near the user makes picking up the user's inputs possible. Besides, because the speaker is closer to the user, it should be easier to wake up the user with the same sound volume.
 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+<img src="./images/prototype1.jpg" height="400">
+
+<img src="./images/prototype2.jpg" height="400">
 
 LAB PART 2
 

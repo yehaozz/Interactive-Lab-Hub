@@ -119,7 +119,6 @@ def display_info(bgc, rm=None):
 
 # Initialize rm
 rm = int(time.strftime("%I"))
-rm=2
 
 while True and rm != 0:
     try:

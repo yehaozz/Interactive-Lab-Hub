@@ -348,10 +348,53 @@ You can then call whichever control you like rather than setting a fixed value f
 We encourage you to try using these controls, **while** paying particular attention to how the interaction changes depending on the position of the controls. For example, if you have your servo rotating a screen (or a piece of cardboard) from one position to another, what changes about the interaction if the control is on the same side of the screen, or the opposite side of the screen? Trying and retrying different configurations generally helps reveal what a design choice changes about the interaction -- _make sure to document what you tried_!
 
 ### Part F
+### Peer Comments:
+
+1. This is a good idea, and the prototype looks pretty good. Is it possible to make it smaller? What is the size supposed to be for this
+
+2. I love the idea of a gesture alarm! A few questions: 1) does the gesture alone turn off the alarm or does the person also need to press a button? Just the gesture might be too easy for people who like to oversleep their alarms - for this reason I like the idea of the gesture sensor being on the other side of the room so the person actually has to get up and will be less likely to go back to sleep. 2) It could be safer/cleaner to hide the wires at the top on the inside of the box. 3) It might be helpful to add some words/text to the prototype so people can have a hint of how to interact with the device (on/off/where the sensor is located etc.).
+
+3. You may want to consider the limitations of the proximity sensor in terms of distance. In your diagrams it seemed like the alarm was far away from the user. Also there should be consideration for the size of the screen as well, since the text may not be visible to the user. Is there any way to detect false inputs?
+
+
 ### Record
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
+
+__Iteration 1:__
+* "Looks like": The alarm clock is a rectangle box, and it has the following components on the same side.
+One screen to show the current time and indicate the status of gestures.
+A servo motor to indicate UDLR(Up, Down, Left,Right) gesture instructions.
+A speaker to make sounds as the waking up alarm.
+A gesture sensor where users can make gestures close to.
+
+* "Works like": The alarm clock can display the current time, make sounds to wake the user up, and generate random gesture instructions for users to follow. Once the alarm rings, the servo motor will rotate to a certain angle which indicates UDLR, and the user needs to make corresponding gestures near the gesture sensor. If the user makes a correct gesture, the screen will turn to green and automatically show a next gesture, otherwise the screen will turn to red.
+
+* "Acts like": The user interacts with the device by the action of waking up to the alarm sound from the clock and turning it off. Instead of just using one button to turn off the alarm, the user has to perform a set of gestures displayed on the screen. The user gets the instruction for the gesture actions throuh the servo motor. The screen displaying the clock changes the background color to green if the correct gesture is performed, else it turns red. This acts as a feedback for the user if they have performed the correct gesture. There is also feedback in the form of sound where two different sounds are played depending on whether the user is right or wrong.
+
+
+
+https://user-images.githubusercontent.com/64258179/138709308-cff5a6ac-8377-4646-aa91-a6104f4a57f6.mp4
+
+__Updates made for Iteration 2:__
+1. The screen now displays current time and the remaining number of gestures to be performed.
+2. When all the gestures are performed, a mission passe soud is triggered.
+
+__Iteration 2:__
+* "Looks like": The alarm clock is a rectangle box, and it has the following components on the same side.
+A display screen, one to show the current time and the number of gesture actions to be performed to turn of the alarm.
+Using the servo motor to indicate UDLR(Up, Down, Left,Right) gesture instructions.
+A speaker makes sounds as the waking up alarm.
+A gesture sensor where users can make gestures close to.
+
+* "Works like": The alarm clock can display the current time, make sounds to wake the user up, and generate random gesture instructions for users to follow. Once the alarm rings, the servo motor will rotate to a certain angle which indicates UDLR which will show the icon of directions, and the user needs to make corresponding gestures near the gesture sensor. If the user makes a correct gesture, the gesture screen will turn to green along with a victory sound feedback, otherwise the gesture screen will turn to red. The screen also provides information on how many gestures are suppose to be performed by the user to top the alarm.
+
+* "Acts like":The user interacts with the device by the action of waking up to the alarm sound from the clock and turning it off. Instead of just using one button to turn off the alarm, the user has to perform a set of gestures displayed on the screen. When the user performs a gesture they get feedback for their gesture through the color of the screen that changes to green if the right gesture is performed, else it changes to red. They also get a feedback interms of the remaining number of gestures to be performed to turn off the alarm. Another modality of feedback is through sound where a ta-da is played when the user performs the correct gesture. All these actions and feedbacks are aimed at increasing the interaction of the device with the user thereby making it easier for the user to wake up in the morning.
+
+
+   
+
+https://user-images.githubusercontent.com/64258179/138713430-d3f2bfc8-44b2-4cb9-98ba-e856a7798310.mp4
+
+
 

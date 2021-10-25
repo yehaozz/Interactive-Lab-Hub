@@ -372,8 +372,6 @@ A gesture sensor where users can make gestures close to.
 
 * "Acts like": The user interacts with the device by the action of waking up to the alarm sound from the clock and turning it off. Instead of just using one button to turn off the alarm, the user has to perform a set of gestures displayed on the screen. The user gets the instruction for the gesture actions throuh the servo motor. The screen displaying the clock changes the background color to green if the correct gesture is performed, else it turns red. This acts as a feedback for the user if they have performed the correct gesture. There is also feedback in the form of sound where two different sounds are played depending on whether the user is right or wrong.
 
-
-
 https://user-images.githubusercontent.com/64258179/138709308-cff5a6ac-8377-4646-aa91-a6104f4a57f6.mp4
 
 __Updates made for Iteration 2:__
@@ -389,12 +387,6 @@ A gesture sensor where users can make gestures close to.
 
 * "Works like": The alarm clock can display the current time, make sounds to wake the user up, and generate random gesture instructions for users to follow. Once the alarm rings, the servo motor will rotate to a certain angle which indicates UDLR which will show the icon of directions, and the user needs to make corresponding gestures near the gesture sensor. If the user makes a correct gesture, the gesture screen will turn to green along with a victory sound feedback, otherwise the gesture screen will turn to red. The screen also provides information on how many gestures are suppose to be performed by the user to top the alarm.
 
-* "Acts like":The user interacts with the device by the action of waking up to the alarm sound from the clock and turning it off. Instead of just using one button to turn off the alarm, the user has to perform a set of gestures displayed on the screen. When the user performs a gesture they get feedback for their gesture through the color of the screen that changes to green if the right gesture is performed, else it changes to red. They also get a feedback interms of the remaining number of gestures to be performed to turn off the alarm. Another modality of feedback is through sound where a ta-da is played when the user performs the correct gesture. All these actions and feedbacks are aimed at increasing the interaction of the device with the user thereby making it easier for the user to wake up in the morning.
-
-
-   
+* "Acts like":The user interacts with the device by the action of waking up to the alarm sound from the clock and turning it off. Instead of just using one button to turn off the alarm, the user has to perform a set of gestures displayed on the screen. When the user performs a gesture they get feedback for their gesture through the color of the screen that changes to green if the right gesture is performed, else it changes to red. They also get a feedback in terms of the remaining number of gestures to be performed to turn off the alarm. Another modality of feedback is through sound where a ta-da is played when the user performs the correct gesture. When the user finishes all the gestures, the classical Grand Theft Auto (GTA) mission passed sound effect will be triggered. All these actions and feedbacks are aimed at increasing the interaction of the device with the user thereby making it easier for the user to wake up in the morning.
 
 https://user-images.githubusercontent.com/64258179/138713430-d3f2bfc8-44b2-4cb9-98ba-e856a7798310.mp4
-
-
-

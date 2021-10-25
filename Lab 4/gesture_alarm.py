@@ -117,8 +117,8 @@ def display_info(bgc, rm=None):
     
     display.image(image, rotation)
 
-# Initialize rm
-rm = int(time.strftime("%I"))
+# rm = int(time.strftime("%I"))
+rm = 7 # number of gestures to finish
 
 while True and rm != 0:
     try:
@@ -163,7 +163,7 @@ while True and rm != 0:
         
         # Set the servo to 0 degree position
         servo.angle = 0
-        time.sleep(1)
+        # time.sleep(1)
         
     except KeyboardInterrupt:
         # Once interrupted, set the servo back to 0 degree position

@@ -107,8 +107,17 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
 
+<img src="./imgs/MQTT_setup.jpg" width="500">
+
+<img src="./imgs/MQTT.png" width="500">
+
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
+We implemented the [data streaming with the proximity sensor](./stream_apds_9960.py).
+
+<img src="./imgs/Proximity_setup.jpg" width="500">
+
+<img src="./imgs/Proximity.png" width="500">
 
 ### Part D
 ### The One True ColorNet

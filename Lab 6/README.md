@@ -86,6 +86,17 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+1. When player A waves hands at the gesture sensor, player B will receive a greeting message on her screen.
+
+2. When some person approaches the door of the user’s house, the user will get a notification through this messaging system. This is done with the help of the distance sensor data. 
+
+3. Set a microphone near a baby. When the baby cries, her parents will receive messages remotely. 
+
+4. Remote paper scissor rock game. Use webcams to capture the gestures of player A and player B who are at different locations. Submit the gesture information to the messaging system, and compare the results there. Then send back the result to the two players’ screens.                                                                                                                                            
+
+5. When player A shakes the Accel/Gyro sensor, player B will receive both message and sound notification on her side. 
+
+
 ### Part C
 ### Streaming a Sensor
 
@@ -158,11 +169,47 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 
+The design we chose to implement is the remote rock paper scissors. This is a fun past time game especially during covid times where people are physically away from each other and two users can play the game from different geographical locations remotely.
+
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+
+We have two players A and B, two webcams as input devices, and two screens as output devices.
+
+__Input__: The webcam of each player detects the gesture of the player. The webcam should be near the player and the screen.
+
+__Output__: The screen of each player shows the result of the game.
+
+__Computation:__ Player A’s Pi receives gestures of both player A and player B, and it computes the result and shows on the screen of A. And the computation process of B is the same.
+
+<img width="618" alt="Screen Shot 2021-11-15 at 4 22 37 PM" src="https://user-images.githubusercontent.com/64258179/141855633-9d00e385-9471-49fd-a3e3-6f75404ceaf5.png">
+
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
+Since the system involves 2 screens the initial set of instructions about how to interact with the system will be displayed on the screens for both players. This should give them a sense of how to interact with the system.
+
+We also have implemented user feedback in the form of countdown to update the user about when to start gesturing to begin their turn of the game. There is also feedback in the form of scoring maintained to keep both the users updated with the progress of the game.
+
+Since the rock, paper scissors game is a very common game, the user would know what to expect from the game. The different modality of the remote version of the game would be easy for the user to identify and adapt.
+
+
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
+
+Iteration 1:
+The system involved two webcams and the output was displayed on the MQTT server of the laptop screen. The media pipe module was used for the implementation of the rock paper scissors game.
+
+
+
+https://user-images.githubusercontent.com/64258179/141870196-b36cbecc-9cb2-45a6-8379-9bbf10c65095.mov
+
+
+Iteration 2:
+The output/feedback for this iteration was implemented on the MiniPiTFT screen for each user. This would eliminate the use of the computer for both the payers and include their interaction only through the Pi system. During this iteration of prototyping we encountered that the feedback was changing synchronously with the change of gestures done by the user on the MQTT client, but not on the PiTFT screen. The delay time increased for longer durations as the game proceeded. This was a hurdle for the players. So for every now game we had to restart our script for a seamless experience for the users. 
+
+
+https://user-images.githubusercontent.com/64258179/141869321-8629d50e-8689-40a2-bc40-7bfc6ead13c4.mov
+
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 

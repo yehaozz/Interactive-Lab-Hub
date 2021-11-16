@@ -200,7 +200,7 @@ Since the rock, paper scissors game is a very common game, the user would know w
 Iteration 1:
 The system involved two webcams and the output was displayed on the MQTT server of the laptop screen. The media pipe module was used for the implementation of the rock paper scissors game.
 
-
+https://user-images.githubusercontent.com/52665472/141903240-a9784c09-7445-425a-a999-9706b280a9c2.mp4
 
 https://user-images.githubusercontent.com/64258179/141870196-b36cbecc-9cb2-45a6-8379-9bbf10c65095.mov
 

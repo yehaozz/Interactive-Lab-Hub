@@ -3,12 +3,9 @@ from __future__ import print_function
 from __future__ import division
 import os
 
-# DEVICE = 'esp8266'
+# DEVICE = 'blinkstick'
 DEVICE = 'pi'
 """Device used to control LED strip. Must be 'pi',  'esp8266' or 'blinkstick'
-
-'esp8266' means that you are using an ESP8266 module to control the LED strip
-and commands will be sent to the ESP8266 over WiFi.
 
 'pi' means that you are using a Raspberry Pi as a standalone unit to process
 audio input and control the LED strip directly.
@@ -17,14 +14,6 @@ audio input and control the LED strip directly.
 to control the leds connected to it.
 """
 
-if DEVICE == 'esp8266':
-    UDP_IP = '192.168.0.150'
-    """IP address of the ESP8266. Must match IP in ws2812_controller.ino"""
-    UDP_PORT = 7777
-    """Port number used for socket communication between Python and ESP8266"""
-    SOFTWARE_GAMMA_CORRECTION = False
-    """Set to False because the firmware handles gamma correction + dither"""
-
 if DEVICE == 'pi':
     LED_PIN = 18
     """GPIO pin connected to the LED strip pixels (must support PWM)"""
@@ -32,12 +21,14 @@ if DEVICE == 'pi':
     """LED signal frequency in Hz (usually 800kHz)"""
     LED_DMA = 5
     """DMA channel used for generating PWM signal (try 5)"""
-    BRIGHTNESS = 255
+    BRIGHTNESS = 47
     """Brightness of LED strip between 0 and 255"""
-    LED_INVERT = True
+    LED_INVERT = False
     """Set True if using an inverting logic level converter"""
     SOFTWARE_GAMMA_CORRECTION = True
     """Set to True because Raspberry Pi doesn't use hardware dithering"""
+    ORDER = 'GRB'
+    """The order of the pixel colors - RGB or GRB. Some NeoPixels have red and green reversed."""
 
 if DEVICE == 'blinkstick':
     SOFTWARE_GAMMA_CORRECTION = True

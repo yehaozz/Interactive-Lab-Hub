@@ -9,7 +9,8 @@ from flask import Flask, render_template, Response, send_file
 from flask_socketio import SocketIO, send, emit
 from subprocess import Popen, call
 
-Camera = import_module('camera.camera_opencv').Camera
+# Camera = import_module('camera.camera_opencv').Camera
+Camera = import_module('camera.camera_facemesh').Camera
 camera = Camera()
 hostname = socket.gethostname()
 
@@ -40,7 +41,7 @@ def video_feed():
 
 @app.route('/<audio_file_name>')
 def returnAudioFile(audio_file_name):
-    path_to_audio_file = "/home/pi/Interactive-Lab-Hub/project/music/" + audio_file_name
+    path_to_audio_file = "/home/pi/final_project/music/" + audio_file_name
     return send_file(
          path_to_audio_file, 
          mimetype="audio/mpeg", 

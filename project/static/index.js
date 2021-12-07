@@ -18,15 +18,15 @@ speak.onclick = () => {
 }
 wordsIn.onkeyup = (e) => { if (e.keyCode === 13) { speak.click(); } }
 
-const has_hand = document.getElementById('has_hand')
+// const has_hand = document.getElementById('has_hand')
 
-setInterval(() => {
-  socket.emit('ping_camera', 'dat')
-}, 100)
+// setInterval(() => {
+//   socket.emit('ping_camera', 'dat')
+// }, 100)
 
-socket.on('pong_camera', hand => {
-  has_hand.innerHTML = hand
-});
+// socket.on('pong_camera', hand => {
+//   has_hand.innerHTML = hand
+// });
 
 // music_play.onclick = () => {
 //   socket.emit('music_play')

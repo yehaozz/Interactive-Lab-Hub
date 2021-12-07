@@ -14,11 +14,6 @@
 <body>
   <h1>Joker</h1>
 
-  <h3> Speak </h3>
-  <input type="text" id='wordsIn' style="width:280px">
-  <button id='speak'>send</button>
-  <br>
-
   <h3> Camera </h3>
   <p id="has_hand">false</p>
   <img src="{{ url_for('video_feed') }}">
@@ -39,6 +34,11 @@
   <audio src="Squid Game - Pink Soldiers.mp3" controls> </audio> <br>
   <audio src="Red-Light-Green-Light.mp3" controls> </audio> <br>
   <audio src="Heathens_Trees.mp3" controls> </audio>
+  <br>
+  
+  <h3> Speak </h3>
+  <input type="text" id='wordsIn' style="width:280px">
+  <button id='speak'>send</button>
   <br>
 
   <script src="static/index.js"></script>

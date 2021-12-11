@@ -30,7 +30,7 @@ Include a list/table of parts we used. May be better if images are included.
 
     We used a USB microphone to capture audio input.
     
-    [<img src="images/USB_mic.jpg height="300">](https://www.amazon.com/SunFounder-Microphone-Raspberry-Recognition-Software/dp/B01KLRBHGM?ref_=ast_sto_dp&th=1&psc=1)
+    [<img src="images/USB_mic.jpg" height="200">](https://www.amazon.com/SunFounder-Microphone-Raspberry-Recognition-Software/dp/B01KLRBHGM?ref_=ast_sto_dp&th=1&psc=1)
 
 4. Web camera
 

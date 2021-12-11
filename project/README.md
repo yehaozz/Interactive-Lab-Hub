@@ -1,7 +1,7 @@
 ## Project title
 A little info about your project and/ or overview that explains **what** the project is about.
 
-## Motivation
+## Motivation & Design
 A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
 
 ## Build status

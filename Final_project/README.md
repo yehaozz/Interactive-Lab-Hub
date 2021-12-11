@@ -32,10 +32,4 @@ Give proper credits. Cite any repos, blogposts, videos, (people?) that help with
 ## Reflections
 What have you learned or wish you knew at the start?
 
-*lorem ipsum dolor sit amet ([]())*
-
-*lorem ipsum dolor sit amet ([]())*
-
-*lorem ipsum dolor sit amet ([]())*
-
-*lorem ipsum dolor sit amet ([Yehao Zhang](https://github.com/yehaozz))*
+Leave it here to remind us that we should submit reflections on Canvas.

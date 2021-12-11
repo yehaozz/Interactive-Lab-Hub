@@ -14,6 +14,15 @@ What makes our project stand out? (mood detector, visualzier, controller)
 ### Parts Needed
 Include a list/table of parts we used. May be better if images are included.
 
+1. Raspberry Pi
+
+We used Raspberry Pi 4 Model B.
+
+3. LED strip
+4. Microphone
+5. 5V Power Supply
+6. 
+
 ### Raspberry Pi Wiring
 Explain how all the parts are wired up with the RasPi
 

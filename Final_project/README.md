@@ -7,7 +7,7 @@ Explain why we implement our project. Include our storyboard. Maybe include mott
 ## Features & Demo
 What makes our project stand out? (mood detector, visualzier, controller)
 
-Include video of interaction
+**Include _video_ of interaction**
 
 [//]: # (This may be the most platform independent comment)
 ## Hardware Setup

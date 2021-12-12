@@ -10,7 +10,7 @@ from flask_socketio import SocketIO, send, emit
 from subprocess import Popen, call
 
 # Camera = import_module('camera.camera_opencv').Camera
-Camera = import_module('camera.camera_facemesh').Camera
+Camera = import_module('camera.camera_teachable_machine').Camera
 camera = Camera()
 hostname = socket.gethostname()
 
@@ -61,7 +61,7 @@ def handel_speak(val):
 
 @socketio.on('ping_camera')
 def handle_ping_camera(val):
-    emit('pong_camera', camera.hand_exsit)
+    emit('pong_camera', camera.label)
 
 
 if __name__ == '__main__':

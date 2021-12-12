@@ -4,7 +4,7 @@ import os
 import socket
 from flask import Flask, render_template, Response, send_file
 
-Camera = import_module('camera.camera_opencv').Camera
+Camera = import_module('camera.camera_teachable_machine').Camera
 
 app = Flask(__name__)
 

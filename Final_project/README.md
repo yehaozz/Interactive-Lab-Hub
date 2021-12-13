@@ -39,7 +39,9 @@ There are three key components in Lit Up.
 
   We have a controller platform, where it can capture the user’s facial expression to detect his/her mood. And there are different kinds of music on the platform, based on the detection result, the system can recommend music to the user to cheer him/her up. The user can speak to interact with the platform, and the platform can respond with voices.
 
-**Include _video_ of interaction**
+We tested our system with two users, and took a video of the testing process.
+
+https://user-images.githubusercontent.com/52665472/145899429-551135e6-1b90-4c82-8fc6-b6213df82db2.mp4
 
 Screenshots of the controller during the user test are attached below.
 

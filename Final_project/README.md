@@ -4,7 +4,7 @@
 
 # Lit Up
 
-_Lit Up_ is a comprehensive system with mood detection, powered by machine learning, music recommendation, and audio visualization. The system recommends music based on the user's mood, and respond to the music's rhythm with LEDs. We hope the user's can lighten up with Lit Up!
+_Lit Up_ is a comprehensive system with mood detection, powered by machine learning, music recommendation, and audio visualization. The system recommends music based on the user's mood, and respond to the music's rhythm with LEDs. We hope the user's mood can lighten up with Lit Up!
 
 ## Motivation & Design
 

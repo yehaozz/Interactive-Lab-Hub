@@ -1,9 +1,16 @@
-# Project title
-A short overview of our project. Maybe include a quickly designed logo?
+<p align="center">
+  <img src="images/Lit_Up.png" height="150"/>
+</p>
+
+# Lit Up
+
+_Lit Up_ is a comprehensive system with mood detection, powered by machine learning, music recommendation, and audio visualization. The system recommends music based on the user's mood, and respond to the music's rhythm with LEDs. We hope the user's can lighten up with Lit Up!
 
 ## Motivation & Design
 Explain why we implement our project. Include our storyboard. Maybe include motto?
- 
+
+The main purpose behind implementing this project was how students, especially towards the end of the semester, would be going through a lot of stress. So this tool would help a student or any person that is busy working on something and is anxious or stressed to lighten up based on how they’re feeling without having to waste time on choosing music by answering if they would like the music to change their mood or accompany it. Things are made more interesting by including a music visualizer LED strip to accompany the music. There is also the option of using just the music visualizer for party purposes without using the emotion detector to control it. This makes the usability of the device very flexible for the user to interact with in different scenarios.
+
 ## Features & Demo
 What makes our project stand out? (mood detector, visualzier, controller)
 

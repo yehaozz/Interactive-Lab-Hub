@@ -124,7 +124,7 @@ pi@ixe00:~ $ source led_strip/bin/activate
 (led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ pip install -r requirements.txt
 ```
 
-There might be compatibility issues, most of which can be solved by searching the error message (google, stack overflow). 
+It will take a while to install all the requirements. Although we have tested it several times, there might still be compatibility issues. However, most of them should be solved by searching the error message (google, stack overflow).
 
 ## Configuration & Tests
 
@@ -158,7 +158,7 @@ The video feeds should be displayed on the controller. By changing the Camera mo
 ### Test the LED strip
 
 ```
-(led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ sudo  python led.py
+(led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ sudo python led.py
 ```
 
 If the LED strip is set up properly, you should be able to see three colors, red, green, and blue, sliding throught the entire strip.
@@ -174,7 +174,7 @@ If the LED strip is set up properly, you should be able to see three colors, red
 2. In a separate terminal, run the following command to get the system ready for visualization.
 
 ```
-(led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ sudo  python visualization.py
+(led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ sudo python visualization.py
 ```
 
 To run in the party mode (without mood detection), simply skip the first step.

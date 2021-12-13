@@ -148,6 +148,13 @@ Then run
 
 The video feeds should be displayed on the controller. By changing the Camera module chosen in [app.py](app.py), you can change the video processing pipeline and extract different information. 
 
+### Test the LED strip
+
+```
+(led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ sudo  python led.py
+```
+
+If the LED strip is set up properly, you should be able to see three colors, red, green, and blue, sliding throught the entire strip.
 
 ## Let the Interaction Begin
 Show how to run the controller, mood detector, audio visualizer.
@@ -165,4 +172,19 @@ In a separate terminal, run the following command to get the system ready for vi
 ```
 
 ## Credits
-Give proper credits. Cite any repos, blogposts, videos, (people?) that help with our implementation
+
+The following resources greatly helped with our implementation of Lit Up.
+
+1. Emotion detection using deep learning: https://github.com/atulapra/Emotion-detection
+2. LED strip test & setup: https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring
+3. NeoPixels Package on Raspberry Pi: https://learn.adafruit.com/neopixels-on-raspberry-pi/overview
+4. Audio Reactive LED Strip: https://github.com/scottlawsonbc/audio-reactive-led-strip
+5. Flask video streaming: https://github.com/miguelgrinberg/flask-video-streaming
+6. Mediapipe: https://google.github.io/mediapipe/ 
+7. FaceMesh: https://google.github.io/mediapipe/solutions/face_mesh
+8. Teachable machine platform: https://teachablemachine.withgoogle.com/
+9. Font generation: https://www.fontspace.com/category/marquee
+10. Motion detection packages that we explored but cannot get them running properly on our raspberry pi. They are listed below for future reference. 
+    * https://github.com/KaiX-UCSD/emotion-recognition 
+    * https://github.com/rendzina/FacialExpression 
+    * https://fablab.ruc.dk/facial-expression-recognition-on-a-raspberry-pi/ 

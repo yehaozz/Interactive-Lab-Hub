@@ -23,7 +23,6 @@ The main purpose behind implementing this project was how students, especially t
 <img src="images/storyboard.png" height=300>
 
 ## Features & Demo
-What makes our project stand out? (mood detector, visualzier, controller)
 
 There are three key components in Lit Up.
 
@@ -41,6 +40,13 @@ There are three key components in Lit Up.
   We have a controller platform, where it can capture the user’s facial expression to detect his/her mood. And there are different kinds of music on the platform, based on the detection result, the system can recommend music to the user to cheer him/her up. The user can speak to interact with the platform, and the platform can respond with voices.
 
 **Include _video_ of interaction**
+
+Screenshots of the controller during the user test are attached below.
+
+<p float="left">
+  <img src="images/user_1.png" width="300" />
+  <img src="images/user_2.png" width="300" /> 
+</p>
 
 [//]: # (Videos need to be edited.)
 
@@ -119,7 +125,6 @@ pi@ixe00:~ $ source led_strip/bin/activate
 There might be compatibility issues, most of which can be solved by searching the error message (google, stack overflow). 
 
 ## Configuration & Tests
-Describe how to test both hardware and denpendencies are properly set up.
 
 ### Configuration
 
@@ -135,9 +140,9 @@ We also set other default configurations in the [config.py](config.py) script. T
 To use the plain camera as input to the controller, uncomment the line 12 in [app.py](app.py) and comment out the line 13.  
 
 ```
-12	# Camera = import_module('camera.camera_opencv').Camera
-13	Camera = import_module('camera.camera_teachable_machine').Camera
-14	camera = Camera()
+12  # Camera = import_module('camera.camera_opencv').Camera
+13  Camera = import_module('camera.camera_teachable_machine').Camera
+14  camera = Camera()
 ```
 
 Then run  
@@ -157,19 +162,24 @@ The video feeds should be displayed on the controller. By changing the Camera mo
 If the LED strip is set up properly, you should be able to see three colors, red, green, and blue, sliding throught the entire strip.
 
 ## Let the Interaction Begin
-Show how to run the controller, mood detector, audio visualizer.
 
-Open a terminal window, and run
+1. To run with mood detection, open a terminal window, and execute the following line. Follow the web address prompted in the terminal to interact with the system.
 
 ```
 (led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ python app.py
-```
+```   
 
+2. In a separate terminal, run the following command to get the system ready for visualization.
 
-In a separate terminal, run the following command to get the system ready for visualization.
 ```
 (led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ sudo  python visualization.py
 ```
+
+To run in the party mode (without mood detection), simply skip the first step.
+
+## Side notes
+
+We tried two mechanisms of mood detection, open-source repository, and Google teachable machine. The former one covered a wider range of emotions than the latter one, but did not work on Raspberry Pi in our experiments. Therefore, we went for Google teachable machine for the mood detection implementation.
 
 ## Credits
 

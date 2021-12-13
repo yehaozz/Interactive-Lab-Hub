@@ -41,7 +41,7 @@ def video_feed():
 
 @app.route('/<audio_file_name>')
 def returnAudioFile(audio_file_name):
-    path_to_audio_file = "/home/pi/Interactive-Lab-Hub/project/music/" + audio_file_name
+    path_to_audio_file = os.path.join("music", audio_file_name)
     return send_file(
          path_to_audio_file, 
          mimetype="audio/mpeg", 

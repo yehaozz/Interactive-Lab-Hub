@@ -7,20 +7,22 @@ import tensorflow.keras
 
 def read_file():
     labels = []
-    f = open("/home/pi/idd-final/Interactive-Lab-Hub/Final_project/camera/labels.txt", "r")
+    # f = open("/home/pi/idd-final/Interactive-Lab-Hub/Final_project/camera/labels.txt", "r")
+    # f = open("camera/labels.txt", "r")
+    f = open(os.path.join("camera", "labels.txt"), "r")
     for line in f.readlines():
         if(len(line)<1):
             continue
         labels.append(line.split(' ')[1].strip())
-    print('!!!!!!!!')
-    print(labels)
     return labels
     
 class Camera(BaseCamera):
     video_source = 0
     # Load the model
     # model = tensorflow.keras.models.load_model('keras_model.h5')
-    model = tensorflow.keras.models.load_model('/home/pi/idd-final/Interactive-Lab-Hub/Final_project/camera/keras_model.h5')
+    # model = tensorflow.keras.models.load_model('/home/pi/idd-final/Interactive-Lab-Hub/Final_project/camera/keras_model.h5')
+    model = tensorflow.keras.models.load_model(os.path.join("camera", "keras_model.h5"))
+
     # Load Labels:
     labels = read_file()
     label = "Angry"
@@ -60,7 +62,7 @@ class Camera(BaseCamera):
             # run the inference
             prediction = Camera.model.predict(data)
             # print(prediction)
-            print(Camera.labels[np.argmax(prediction)])
+            # print(Camera.labels[np.argmax(prediction)])
             Camera.label = Camera.labels[np.argmax(prediction)]
 
             # encode as a jpeg image and return it

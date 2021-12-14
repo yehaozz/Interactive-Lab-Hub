@@ -13,6 +13,8 @@ _Lit Up_ is a comprehensive system with mood detection, powered by machine learn
 </p>
 
 The main purpose behind implementing this project was how students, especially towards the end of the semester, would be going through a lot of stress. We believe a simple combination of light and music can trigger inner peace and joy. So our system would help a student or any person that is busy working on something and is anxious or stressed to lighten up based on how they’re feeling without having to waste time on choosing music by answering if they would like the music to change their mood or accompany it. Things are made more interesting by including a music visualizer LED strip to accompany the music. There is also the option of using just the music visualizer for party purposes without using the emotion detector to control it. This makes the usability of the device very flexible for the user to interact with in different scenarios.
+The key design aspects we kept in mind was to make all the components of the device housed inside a single module which is a cardboard box in our case. So the Pi, the circuitry for the LED strip were housed inside the box. The camera was placed outside the box to give the user flexibility to change the location and orientation of the camera based on their posture to get the bet results for emotion detection. Also the entire control of the system was provided on the flask controller and designed to be minimalistic to ensure ease of access for the user. The controller provides the user with feedback for the positioning of their face wrt to the camera and options for music selection.
+
 
 ### Structure
 

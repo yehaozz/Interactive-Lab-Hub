@@ -204,7 +204,20 @@ To run in the party mode (without mood detection), simply skip the first step.
 
 ## Side Notes
 
-We tried two mechanisms of mood detection, open-source repository, and Google teachable machine. The former one covered a wider range of emotions than the latter one, but did not work on Raspberry Pi in our experiments. Therefore, we went for Google teachable machine for the mood detection implementation.
+We tried two mechanisms of mood detection. One is from an open-source repository, and the other is the Google teachable machine. The former one covered a wider range of emotions than the latter one, but did not work on Raspberry Pi in our experiments. Therefore, we went for Google teachable machine for the mood detection implementation. We included screenshots of experiments with both methods below.
+
+<p float="left">
+  <img src="images/or_1.png" width="300" />
+  <img src="images/or_2.png" width="300" /> 
+  <img src="images/or_3.png" width="300" /> 
+</p>
+
+<p float="left">
+  <img src="images/tm_1.png" width="225" />
+  <img src="images/tm_2.png" width="225" /> 
+  <img src="images/tm_3.png" width="225" />
+  <img src="images/tm_4.png" width="225" /> 
+</p>
 
 ## Credits
 

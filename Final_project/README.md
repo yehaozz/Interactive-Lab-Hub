@@ -43,7 +43,7 @@ We tested our system with two users, and took a video of the testing process.
 
 https://user-images.githubusercontent.com/52665472/145899429-551135e6-1b90-4c82-8fc6-b6213df82db2.mp4
 
-Screenshots of the controller during the user test are attached below.
+Screenshots of the controller during the user testings are attached below.
 
 <p float="left">
   <img src="images/user_1.png" width="300" />
@@ -103,7 +103,6 @@ Screenshots of the controller during the user test are attached below.
    Alternative ways to wire Raspberry Pi with the LED strip can be found in this [tutorial](https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring).
 
 ## Dependency Installation
-Provide step by step series of examples and explanations about how to get a environment running.
 
 ### Connect to your Pi and create a virtual environment
 
@@ -161,7 +160,7 @@ The video feeds should be displayed on the controller. By changing the Camera mo
 (led_strip) pi@ixe00:~/Interactive-Lab-Hub/Final_project $ sudo python led.py
 ```
 
-If the LED strip is set up properly, you should be able to see three colors, red, green, and blue, sliding throught the entire strip.
+If the LED strip is set up properly, you should be able to see three colors, red, green, and blue, sliding through the entire strip.
 
 ## Let the Interaction Begin
 

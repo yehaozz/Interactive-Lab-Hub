@@ -2,7 +2,28 @@
   <img src="images/Lit_Up.png" height="150"/>
 </p>
 
-# Lit Up
+# Table of contents
+
+- [Lit Up](#lit-up)
+- [Motivation & Design](#motivation--design)
+  - [Structure](#structure)
+  - [Storyboard](#storyboard)
+- [Features & Demo](#features--demo)
+- [Hardware Setup](#hardware-setup)
+  - [Parts Needed](#parts-needed)
+  - [Raspberry Pi Wiring](#raspberry-pi-wiring)
+- [Dependency Installation](#dependency-installation)
+  - [Connect to your Pi and create a virtual environment](#connect-to-your-pi-and-create-a-virtual-environment)
+  - [Clone the repository and install requirements](#clone-the-repository-and-install-requirements)
+- [Configuration & Tests](#configuration--tests)
+  - [Configuration](#configuration)
+  - [Test the mood detection and the controller](#test-the-mood-detection-and-the-controller)
+  - [Test the LED strip](#test-the-led-strip)
+- [Let the Interaction Begin](#let-the-interaction-begin)
+- [Side Notes](#side-notes)
+- [Credits](#credits)
+
+## Lit Up
 
 _Lit Up_ is a comprehensive system with mood detection, powered by machine learning, music recommendation, and audio visualization. The system recommends music based on the user's mood, and respond to the music's rhythm with LEDs. We hope the user's mood can lighten up with Lit Up!
 
@@ -181,7 +202,7 @@ If the LED strip is set up properly, you should be able to see three colors, red
 
 To run in the party mode (without mood detection), simply skip the first step.
 
-## Side notes
+## Side Notes
 
 We tried two mechanisms of mood detection, open-source repository, and Google teachable machine. The former one covered a wider range of emotions than the latter one, but did not work on Raspberry Pi in our experiments. Therefore, we went for Google teachable machine for the mood detection implementation.
 
